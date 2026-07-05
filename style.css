@@ -1,0 +1,137 @@
+* {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Iosevka Charon Mono";
+    src: url("./fonts/IosevkaCharonMono-Regular.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(224, 223, 206);
+    font-family: "Iosevka Charon Mono", monospace;
+    font-size: 1.25rem;
+    margin: 0;
+    text-align: justify;
+}
+
+.navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    justify-content: right;
+    padding: 20px;
+    background-color: rgb(243, 242, 235);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.25rem;
+    padding: 20px;
+    border-radius: 4px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.navigation a:hover {
+    background-color: rgba(161, 158, 129, 0.5);
+}
+
+.title {
+    font-size: 500%;
+    color: #333;
+    text-align: center;
+    padding: 70px;
+    text-decoration: underline;
+    transition: transform 0.2s ease-in-out;
+}
+
+.title:hover {
+    transform: scale(1.1);
+}
+
+.introduction {
+    display: flex;
+    flex-direction: row;
+    max-width: 50%;
+    color: #333;
+    text-align: justify;
+    gap: 30px;
+    padding: 20px;
+    background: rgba(243, 242, 235);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    word-wrap: break-word;
+    white-space: normal;
+    transition: transform 0.2s ease-in-out;
+}
+
+.introduction:hover {
+    transform: scale(1.03);
+}
+
+.pfp {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(650px,1fr));
+    width: 70%;
+    height:auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.projects-entry {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    padding: 20px;
+    background: rgb(243, 242, 235);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease-in-out;
+}
+
+.projects-entry:hover {
+    transform: scale(1.03);
+}
+
+.preview {
+    object-fit: fill;
+    display: block;
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.socials-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 30px;
+}
+.socials-icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.socials-icon:hover {
+    transform: scale(1.2);
+}
