@@ -71,7 +71,7 @@ body {
     text-align: justify;
     gap: 30px;
     padding: 20px;
-    margin-bottom: 10px;
+    margin: 5px;
     background: rgba(243, 242, 235);
     border-radius: 8px;
     box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
@@ -84,17 +84,18 @@ body {
     transform: scale(1.03);
 }
 
+.icon-skills {
+    width: 100px;
+    height: 100px;
+}
+
+
 .pfp {
     width: 300px;
     height: 300px;
     border-radius: 8px;
     box-sizing: border-box;
     object-fit: cover;
-}
-
-.icon-skills {
-    width: 100px;
-    height: 100px;
 }
 
 .projects-grid {
@@ -131,11 +132,11 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-.icons-grid {
+.socials-grid {
     display: flex;
     gap: 20px;
     justify-content: center;
-    padding: 20px
+    padding: 30px;
 }
 .socials-icon {
     width: 50px;
