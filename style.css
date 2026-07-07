@@ -14,6 +14,9 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: rgb(224, 223, 206);
+    background-image: url("https://uploads.onecompiler.io/42ufnvxuv/1783411400954/webwallpaper.png");
+    background-size: 700px 700px;
+    background-attachment: fixed;
     font-family: "Iosevka Charon Mono", monospace;
     font-size: 1.25rem;
     margin: 0;
@@ -29,7 +32,7 @@ body {
     justify-content: right;
     padding: 20px;
     background-color: rgb(243, 242, 235);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .navigation a {
@@ -46,12 +49,14 @@ body {
 }
 
 .title {
-    font-size: 500%;
+    font-size: 550%;
     color: #333;
+    letter-spacing: -8px;
     text-align: center;
     padding: 70px;
     text-decoration: underline;
     transition: transform 0.2s ease-in-out;
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.2);
 }
 
 .title:hover {
@@ -69,7 +74,7 @@ body {
     margin-bottom: 10px;
     background: rgba(243, 242, 235);
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
     word-wrap: break-word;
     white-space: normal;
     transition: transform 0.2s ease-in-out;
@@ -108,7 +113,7 @@ body {
     padding: 20px;
     background: rgb(243, 242, 235);
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
     transition: transform 0.2s ease-in-out;
 }
 
