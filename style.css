@@ -1,4 +1,4 @@
-* {
+html {
     scroll-behavior: smooth;
 }
 
@@ -13,35 +13,45 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
+
     background-color: rgb(224, 223, 206);
     background-image: url("https://uploads.onecompiler.io/42ufnvxuv/1783411400954/webwallpaper.png");
     background-size: 700px 700px;
     background-attachment: fixed;
+
     font-family: "Iosevka Charon Mono", monospace;
     font-size: 1.25rem;
-    margin: 0;
     text-align: justify;
 }
 
 .navbar {
+    box-sizing: border-box;
     display: flex;
     position: sticky;
     top: 0;
     z-index: 1000;
+
     width: 100%;
     justify-content: right;
     padding: 20px;
+
     background-color: rgb(243, 242, 235);
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+    transform: translateZ(0)
 }
 
 .navigation a {
+    padding: 20px;
+
     text-decoration: none;
     color: #333;
     font-size: 1.25rem;
-    padding: 20px;
+
     border-radius: 4px;
-    transition: transform 0.2s ease-in-out;
+
+    transition: transform 0.2s ease;
 }
 
 .navigation a:hover {
@@ -49,14 +59,16 @@ body {
 }
 
 .title {
+    padding: 70px;
+
     font-size: 550%;
     color: #333;
     letter-spacing: -8px;
     text-align: center;
-    padding: 70px;
     text-decoration: underline;
-    transition: transform 0.2s ease-in-out;
     text-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+
+    transition: transform 0.2s ease-in-out;
 }
 
 .title:hover {
@@ -66,18 +78,41 @@ body {
 .introduction {
     display: flex;
     flex-direction: row;
+
     max-width: 50%;
-    color: #333;
-    text-align: justify;
     gap: 30px;
     padding: 20px;
     margin: 5px;
+
     background: rgba(243, 242, 235);
     border-radius: 8px;
     box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
+    
+    text-align: justify;
     word-wrap: break-word;
     white-space: normal;
+    
     transition: transform 0.2s ease-in-out;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    width: fit-content;
+    padding: 20px;
+
+    background: rgb(243, 242, 235);
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+
+    transition: transform 0.2s ease-in-out;
+}
+
+.skills:hover {
+    transform: scale(1.03);
 }
 
 .introduction:hover {
@@ -93,14 +128,16 @@ body {
 .pfp {
     width: 300px;
     height: 300px;
+
     border-radius: 8px;
-    box-sizing: border-box;
     object-fit: cover;
 }
 
 .projects-grid {
     display: grid;
+
     grid-template-columns: repeat(auto-fit, minmax(650px,1fr));
+
     width: 70%;
     height:auto;
     gap: 20px;
@@ -111,10 +148,13 @@ body {
     display: flex;
     gap: 30px;
     align-items: flex-start;
+
     padding: 20px;
+
     background: rgb(243, 242, 235);
     border-radius: 8px;
     box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
+
     transition: transform 0.2s ease-in-out;
 }
 
@@ -123,27 +163,48 @@ body {
 }
 
 .preview {
-    object-fit: fill;
     display: block;
+    object-fit: fill;
+
     width: 250px;
     height: auto;
+    
     border-radius: 8px;
-    box-sizing: border-box;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .socials-grid {
     display: flex;
-    gap: 20px;
     justify-content: center;
+
     padding: 30px;
+    gap: 20px;
+    
 }
 .socials-icon {
     width: 50px;
     height: 50px;
+    
     transition: transform 0.2s ease-in-out;
 }
 
 .socials-icon:hover {
     transform: scale(1.2);
+}
+
+.animate {
+    display: flex;
+    justify-content: center;
+    
+    opacity: 0;
+    transform: translateY(30px);
+
+    transition:
+        opacity 1s ease,
+        transform 1s ease;
+}
+
+.animate.show {
+    opacity: 1;
+    transform: translateY(0);
 }
